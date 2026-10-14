@@ -16,7 +16,6 @@ import java.util.ArrayList;
 public class FLRS2X1_exercitiu2 {
 	public static void main (String []args) {
 
-		// 1. Matricea reader copiată exact din PIController.java
 		FLRS readerFLRS = new FLRS(
 				new FV(FZ.NL), new FV(FZ.NM), new FV(FZ.ZR), new FV(FZ.PM), new FV(FZ.PL),
 				new FV(FZ.NL), new FV(FZ.NM), new FV(FZ.ZR), new FV(FZ.PM), new FV(FZ.PL),

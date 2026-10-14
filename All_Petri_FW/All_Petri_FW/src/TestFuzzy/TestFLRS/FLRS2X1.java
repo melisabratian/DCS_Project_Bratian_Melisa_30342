@@ -61,7 +61,7 @@ public class FLRS2X1 {
 
 				ArrayList<PlaceNameWithWeight> input = new ArrayList<>();
 				input.add(new PlaceNameWithWeight("P1", 1F));
-				input.add(new PlaceNameWithWeight("P2", -1F));
+				input.add(new PlaceNameWithWeight("P2", 1F));
 
 				
 				ArrayList<String> Output = new ArrayList<>();

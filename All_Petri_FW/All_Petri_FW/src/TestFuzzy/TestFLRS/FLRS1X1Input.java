@@ -7,7 +7,7 @@ import java.nio.file.Files;
 
 public class FLRS1X1Input {
 	public static void main(String[] args) throws InterruptedException, IOException {
-		File file = new File("D:\\PetriInputData\\test3.txt");
+		File file = new File("C:\\Users\\Melisa\\Desktop\\AN4\\DCS\\project\\test3.txt");
 		Files.deleteIfExists(file.toPath());
 		FileWriter fw = new FileWriter(file.getPath());
 		Float f = -1f;
