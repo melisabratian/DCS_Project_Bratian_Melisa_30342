@@ -5,7 +5,7 @@ import java.io.Serializable;
 public class Fuzzy implements Cloneable, Serializable {
 
 	/**
-	 * 
+	 *
 	 */
 	private static final long serialVersionUID = 1L;
 
@@ -30,6 +30,19 @@ public class Fuzzy implements Cloneable, Serializable {
 
 	public String toString() {
 		return "(" + Value.toString() + ": " + Vector.toString() + ")";
+	}
+
+	@Override
+	public boolean equals(Object o) {
+		if (!(o instanceof Fuzzy)) {
+			return false;
+		}
+		Fuzzy Temp = ((Fuzzy) o);
+		if (!Temp.Value.equals(this.Value))
+			return false;
+		if (!Temp.Vector.equals(this.Vector))
+			return false;
+		return true;
 	}
 
 	public void GenerateFuzzyToken(Float v) {

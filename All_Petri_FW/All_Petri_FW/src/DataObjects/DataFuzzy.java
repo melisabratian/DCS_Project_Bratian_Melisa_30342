@@ -9,7 +9,7 @@ import Interfaces.PetriObject;
 
 public class DataFuzzy implements Interfaces.PetriObject, Cloneable, Serializable {
 	/**
-	 * 
+	 *
 	 */
 	private static final long serialVersionUID = 1L;
 
@@ -102,5 +102,19 @@ public class DataFuzzy implements Interfaces.PetriObject, Cloneable, Serializabl
 	@Override
 	public boolean GetToken() {
 		return this.token;
+	}
+
+	@Override
+	public boolean equals(Object o) {
+
+		if (!(o instanceof DataFuzzy)) {
+			return false;
+		}
+
+		DataFuzzy Temp = ((DataFuzzy) o);
+		if (!Temp.Value.equals(this.Value))
+			return false;
+
+		return true;
 	}
 }
